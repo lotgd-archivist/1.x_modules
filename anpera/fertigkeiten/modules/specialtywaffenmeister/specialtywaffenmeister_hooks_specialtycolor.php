@@ -1,0 +1,3 @@
+<?php
+$args[$spec] = $ccode;
+?>

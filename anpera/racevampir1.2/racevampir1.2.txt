@@ -1,0 +1,28 @@
+###COPYRIGHT###
+Copyright (C) 2006 the_Cr0w (aka Vancha March)
+Email: c.herold@inode.at
+Homepage: http://www.logd-diablo.at
+
+Plattform: LOTGD - 1.1.0 DragonPrime Edition
+
+racevampir.php
+
+###CHANGELOG###
+Version 1.0 vom 9.12.2006
+*Vampir als Rasse verfügbar
+*Vampire sind stärker als andere Rassen und können sich regenerieren
+*neue Stadt
+*Fürtsenhalle (Versammlungsort)
+*andere Rassen können zu Vampiren werden
+
+Version 1.1 vom 10.12.2006
+*Vampire müssen Blutrinken
+*wenn sie zu wenig Blut trinken sterben sie
+*Vampire können auf Opfersuche gehn Evil
+
+Version 1.2 vom 16.12.2006
+*ein paar Bugfixes
+
+
+noch geplant:
+*Vampirjäger

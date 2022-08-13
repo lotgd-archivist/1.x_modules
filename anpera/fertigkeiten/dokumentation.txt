@@ -1,0 +1,370 @@
+Dokumentation: Das Fertigkeitensystem für Legend of the Green Dragon 1.0.x
+
+*********************************************************
+*	Diese Datei sollte aus fertigkeiten.zip stammen.	*
+*														*
+*	Achtung: Wer diese Dateien benutzt, verpflichtet	*
+*	sich, alle Module, die er für das Fertigkeiten-		*
+*	system entwickelt frei und öffentlich zugänglich	*
+*	zu machen! Jegliche Veränderungen an diesen Dateien *
+*	müssen ebenfalls veröffentlicht werden!				*
+*														*
+*	Wir entwickeln für Euch - Ihr entwickelt für uns.	*
+*														*
+*	Jegliche Veränderungen an diesen Dateien 			*
+*	müssen ebenfalls veröffentlicht werden - so sieht 	*
+*	es die Lizenz vor, unter der LOTGD veröffentlicht	*
+*	wurde!												*
+*														*
+*	Zuwiderhandlungen können empfindliche Strafen		*
+*	nach sich ziehen!									*
+*														*
+*	Zudem bitten wir darum, dass Ihr uns eine kurze		*
+*	Mail an folgende Adresse zukommen lasst, in der		*
+*	Ihr	uns die Adresse des Servers nennt, auf dem das	*
+*	Fertigkeitensystem verwendet wird:					*
+*	cern AT quantentunnel.de							*
+*	(Spamschutz " AT " durch "@" ersetzen)				*
+*														*
+*	Das komplette Fertigkeitensystem ist zuerst auf		*
+*	http://www.green-dragon.info erschienen.			*
+*														*
+*********************************************************
+
+I.		Nutzungsbedingungen
+II.		Installationshinweise
+III.	Was ist das Fertigkeitensystem? 
+IV.		Was habe ich von den Fertigkeiten? 
+V.		Wie funktionieren die Fertigkeitsproben? 
+VI.		Wie steigere ich die Fertigkeiten? 
+VII.	Wie sieht es mit weiteren Fertigkeiten aus? 
+VIII.	Aufforderung 
+
+
+I. Nutzungsbedingungen
+
+Wer Module für dieses System entwickelt, verpflichtet sich, sie frei
+und öffentlich zugänglich zu machen. Das bedeutet *verpflichtend*:
+
+a.	Solche Module müssen direkt vom Einsatz-Server aus heruntergeladen werden können.
+	Sollten sie in mehrere Dateien aufgeteilt sein, muss der Link auf eine gepackte 
+	Datei verweisen.
+b.	Uns wird eine gültige Download-Adresse an folgende E-Mail-Adresse geschickt,
+	damit wir den Überblick behalten können: cern@quantentunnel.de .
+c.	Solche Module werden in mindestens einem der folgenden Foren veröffentlicht:
+	dragonprime.net
+	www.anpera.net
+	
+Zudem müssen alle Veränderungen an unseren bestehenden Modulen ebenfalls umgehend
+veröffentlicht werden! Innerhalb der Dateien sind sie deutlich kenntlich zu machen.
+	
+Wer damit nicht leben kann, hat kein Anrecht darauf, unser System zu benutzen 
+und muss es bleiben lassen!
+	
+Von diesen Pflichtpunkten abgesehen wären wir Euch aber auch sehr dankbar, 
+wenn Ihr uns an dieselbe Adresse eine kurze Mail schicken könntet, in der Ihr uns 
+die Adresse des Servers nennt, auf dem Ihr unsere Dateien einsetzt.
+
+Jetzt aber genug der Vorrede. Kommen wir zur eigentlichen Dokumentation:
+
+
+II. Installationshinweise
+
+Prinzipiell sollte es reichen, wenn der gesamte Inhalt von fertigkeiten.zip in 
+das Stammverzeichnis der "Green Dragon"-Installation kopiert wird (das ist das 
+Verzeichnis, in dem es die Unterverzeichnisse "modules", "lib", "images" und 
+"templates" gibt). Danach können alle Module wie gewohnt über die Modulverwaltung
+installiert werden.
+
+ACHTUNG: Wir raten Euch *dringend*, die Module zunächst auf einem Testserver
+zu installieren, um Euch mit ihnen vertraut zu machen. In jedem Fall solltet Ihr vor
+der Aktivierung bei jedem einzelnen Modul die Einstellungen durchgehen, damit nichts 
+auf Euren Server kommt, was nicht zu ihm passt.
+
+
+III. Was ist das Fertigkeitensystem?
+
+Es handelt sich dabei um ein Wertesystem, das mit dem aller gängigen
+Rollenspiele vergleichbar ist. Die Fertigkeitswerte können von den
+Spielern individuell gesteigert und von jedem beliebigen Modul in
+Form einer Probe abgefragt werden.
+
+Du kannst es hier herunterladen:
+	http://dragonprime.net/users/Harassim/fertigkeiten.zip
+
+Folgende sieben Fertigkeiten sind verfügbar: 
+
+--> Bogenschießen 
+--> Kochen und Pflanzenkunde
+--> Schleichen und Verstecken 
+--> Schwimmen und Tauchen 
+--> Klettern 
+--> Reiten und Kutschefahren
+--> Musik und Gesang 
+
+Der Startwert beträgt 5, der Maximalwert 95. Hinzu kommen Rassenboni und
+-mali von jeweils 5, die eine Senkung auf 0 bzw. eine Steigerung auf 100
+zulassen. (Hinweis: Die Boni- und Maliliste enthält drei Rassen, die ich
+selbst entworfen habe. Über die Einstellungen kann man dies jedoch beliebig
+anpassen.)
+
+
+IV. Was habe ich von den Fertigkeiten? 
+
+Jede Menge Erweiterungsmöglichkeiten und maximale Transparenz für die Spieler!
+Es ist möglich, eine Vielzahl von Ereignissen so zu verändern, dass sie nicht
+mehr dem puren Zufall unterliegen. In der Praxis ist es doch so, dass die
+meisten Spieler anfangen, bestimmte Ereignisse oder einzelne Auswahlmöglichkeiten
+zu meiden, wenn sie eine Ahnung davon bekommen (oder nachgeschaut) 
+haben, wie groß die Erfolgswahrscheinlichkeit ist.
+Wenn ich jedoch sehe, dass es in dem Ereignis, in dem ich mich gerade befinde,
+um eine meiner Fertigkeiten geht, kann ich mein *individuelles* Risiko
+genau abwägen. Mit einem Schwimmenwert von 10 würde ich einen reißenden Fluss
+also meiden - mit 70 sähe das schon ganz anders aus.
+
+
+V. Wie funktionieren die Fertigkeitsproben? 
+
+Es wird gegen 0-100 gewürfelt. Dieser Wert wird vom modifizierten Fertigkeitswert
+abgezogen. Ist das Ergebnis größer oder gleich 0, gilt die Probe als gelungen.
+
+Der modifizierte Fertigkeitswert besteht aus dem Fertigkeitswert selbst und
+allen für das jeweilige Ereignis individuellen Modifikatoren. Ein negativer
+Modifikator gilt als Erschwerung, ein positiver als Erleichterung der Probe.
+
+Beispiel:
+
+Ich beschließe an einem schönen Sommertag in meinem Lieblingssee schwimmen zu gehen.
+
+Variante 1
+	Da der See recht ruhig ist und das Wetter gut, habe ich keine Modifikatoren.
+	--> Fertigkeitswert - Probe muss >= 0 sein
+		
+Variante 2
+	Da man überall stehen kann, wird mir die Probe erleichtert. Der Modifikator
+	beträgt daher +30.
+	--> Fertigkeitswert + Modifikator - Probe muss >= 0 sein
+
+Variante 3
+	Da zwar gutes Wetter herrscht, es hier aber einige Strudel gibt, wird mir
+	die Probe erschwert. Der Modifikator beträgt daher -30.
+	--> Fertigkeitswert + Modifikator - Probe muss >= 0 sein
+	
+
+Diese simple Probe lässt sich über folgende Funktion realisieren:
+
+	$schwimmen = get_fertigkeit(schwimmen);
+
+	Variante 1
+		$probe = probe($schwimmen);
+	
+	Variante 2+3
+		$probe = probe($schwimmen, $modifikator);
+	
+	if ($probe[ergebnis] == "erfolg")
+	etc.
+
+"ergebnis" kann sein: erfolg  / kritischer erfolg / misserfolg / kritischer misserfolg.
+Das heißt, es ist grundsätzlich ein Glücksfaktor enthalten, der eine Probe
+selbst dann gelingen lässt, wenn man sie rein rechnerisch gar nicht schaffen
+könnte. Im Umkehrschluss bedeutet dies aber auch, dass selbst perfekt ausgebildeten
+Spielern immer noch ein Restrisiko erhalten bleibt. Jeder hat mal einen schlechten Tag.
+
+Standardmäßig beträgt die Wahrscheinlichkeit für kritische Ergebnisse
+jeweils 2.5%. Dabei gilt einzig der Würfelwert! D.h. ein Würfelwurf von <=2.5 oder
+>= 97.5 gilt automatisch als kritisch gelungen bzw. kritisch misslungen -
+ungeachtet des Fertigkeitswertes und aller Modifikatoren!
+
+In unserem Beispiel könnte man kritische Ergebnisse dazu verwenden, eine besonders
+krasse Folge einbauen. So wäre es denkbar, dass man bei einem Misserfolg bei
+Variante 3 nach dem Verlust von Lebenspunkten eine zweite Probe zugestanden bekommt.
+Eventuell so lange, bis man sich gerettet hat oder ertrunken ist. Bei einem kritischen
+Misserfolg könnte man den Spieler sofort ertrinken lassen; bei einem kritischen Erfolg
+befreit er sich nicht nur aus seiner misslichen Lage - er bekommt einen Punkt auf seine
+Fertigkeit, weil er sich verbessert hat! In jedem Fall sollte ein kritisches Ergebnis
+immer eine noch eindeutigere Variante darstellen als das normale Ergebnis. Hier hat
+jemand ganz besonders versagt oder ganz besonderen Erfolg gehabt.
+
+Die kritischen Werte können wie folgt eingestellt werden, falls sie unerwünscht sind
+oder für den jeweiligen Anwendungszweck zu gering oder zu hoch:
+
+	probe=probe($schwimmen, $modifikator, $kritischer_erfolg, $kritischer_misserfolg);
+
+Nun wäre aber auch eine Probe denkbar, die zwischen mehr unterscheidet als
+"(brilliant) geschafft" und "(unglaublich) versagt". Hierzu ist es möglich,
+den verrechneten Wert selbst abzufragen:
+
+	$probe[wert];
+
+Über diesen Wert lassen sich Ereignisse qualitativ abstufen.
+
+Beispiel: Ich schleiche an einer Wache vorbei.
+
+	Ergebnis "-50"
+	--> Ich verursache einen Höllenlärm. Jetzt weiß jeder, wo ich bin!
+	
+	Ergebnis "-25"
+	--> Die Wache schaut in meine Richtung. Sie wird mal nachschauen.
+	
+	Ergebnis "-5"
+	--> Knapp vorbei. Die Wache schaut in meine Richtung, geht aber weiter.
+	
+	Ergebnis "0"
+	--> Gerade so geschafft.
+	
+	Ergebnis "50"
+	--> Eine Meisterleistung! Wer so gut schleicht, muss bei der zweiten Wache
+		keine Probe mehr ablegen.
+		
+	etc.
+	
+In diesem Fall wäre es aber sicherlich stimmungsvoller, wenn man der Wache
+auch eine Probe zugesteht:
+
+	I.
+	Mein Schleichen- und Verstecken-Wert
+	$schleichen=50;
+
+	Knarrender Dielenboden
+	$mod=-15;
+	
+	Meine Probe ist erschwert
+	$probe_ich=probe($schleichen, $mod);
+	
+	II.
+	Wahrnehmung der Wache
+	$wache=50;
+	
+	Ihre Probe ist nicht modifiziert
+	$probe_wache=probe($wache);	
+	
+	III.
+	Verrechnung
+	$ergebnis = $probe_ich[wert] - $probe_wache[wert];
+	
+	if ($ergebnis <= -50){
+	output("Du verursachst einen Höllenlärm. Die Wache kommt mit Verstärkung angerannt!");
+	}
+		
+	etc.
+	
+Möglich wäre auch eine weitere Differenzierung, je nachdem, wer
+welches Ergebnis bekommen hat:
+
+	if ($probe_wache[wert] <= 50 && $probe_ich[wert] < 0 && $probe_ich[wert] > 50){
+	output("Du schleichst an ihr vorbei und stößt dabei gegen einen Tisch. Aber zum Glück
+	war sie in diesem Moment gerade so abgelenkt, dass sie Dich trotzdem nicht gehört hat.");
+		
+	etc.
+	
+Zu guter letzt kann es in manchen Fällen sinnvoll sein, einen ganzzahligen
+Wert zu erhalten (siehe Bogenschießen in wettkampf.php). Das lässt sich 
+bequem einrichten.
+
+	$probe=probe($fertigkeitswert, $modifikator, $kritischer_erfolg, $kritischer_misserfolg, true);
+	
+	
+VI. Wie steigere ich die Fertigkeiten? 
+Das Modul wettkampf.php läuft zweiphasig: Wenn auf dem "Platz der Völker" gerade
+ein Fest stattfindet, sind die Ausbilder als Juroren beschäftigt, so dass sie
+für die Ausbildung keine Zeit haben. Findet kein Fest statt, dienen sie als
+Ausbilder.
+
+Dabei erhöhen sie ihre Preise in mehreren Stufen, je nachdem wie gut man bereits ist.
+"Gespräche" haben eine Chance von 1:1, eine "normale Übungsstunde" gelingt immer
+und eine "intensive Übungsstunde" hat eine Chance von 1:1, dass man sich gleich um
+zwei Punkte verbessert. Ab bestimmten Werten fallen die Optionen "Gespräch" und
+"normale Übungsstunde" weg. Zudem richtet sich der Preis auch nach dem derzeitigen User-Level.
+
+Pro Tag sind drei Steigerungsversuche erlaubt, pro DK 15 *erfolgreiche* Steigerungen.
+Diese Werte sind einstellbar, aber wir empfehlen dringend, nicht allzusehr davon
+abzuweichen!
+
+Darüberhinaus gibt es Limits, die verhindern sollen, dass ein Spieler auf ewig
+Topwerte behält. In einem Spiel mit offenem Ende wie LoGD ist dies nicht anders
+möglich, wenn der Spielspaß erhalten bleiben soll. Zudem sollte jedem klar sein,
+dass man schon einige Zeit aufwenden muss, um Profi zu bleiben - wer in 7 Töpfen
+gleichzeitig rührt, wird das nur mit Mühe schaffen können. Daher bestehe eine Chance,
+ab einem Wert von 85 nach einem DK um einen Punkt zurückgestuft zu werden. Dieser
+Grenzwert ist von 75-95 einstellbar. Wir empfehlen dringend, ihn nicht höher als 90
+zu setzen!
+
+VI. Wie sieht es mit weiteren Fertigkeiten aus? 
+Grundsätzlich ein guter Gedanke. Aber zum einen soll das System gerade am Anfang überschaubar
+bleiben und zum anderen gibt es viele Fertigkeiten, die sich nicht sinnvoll für Waldereignisse
+verwerten lassen. Fertigkeiten wie z.B. "Schmieden" oder richtige Waffenfertigkeiten würden
+Veränderungen des Ausrüstungs- und sogar Kampfsystems mit sich bringen, die nicht auf die
+leichte Schulter genommen werden dürfen. Viele andere Fertigkeiten hingegen hören sich zwar
+gut an, sind aber bei näherer Betrachtung exotisch und nur wenig universell einsatzbar.
+Bereits "Kochen" sowie "Musik und Gesang" sind nur bedingt brauchbar, wurden aber
+mit aufgenommen, weil sie schöne Module für die Spielerinteraktion ermöglichen können
+(Wink mit dem Zaunpfahl!).
+Grundsätzlich soll gelten, dass möglichst viele Spieler etwas von jeder Fertigkeit haben.
+Daher plädiere ich dafür, dass zunächst einmal die von mir vorgesehenen Fertigkeiten ausgeschöpft
+werden. Erst dann sollte man darüber nachdenken, neue Dorf-Module zu entwerfen, die ähnlich
+dem Platz der Völker Ausbilder beherbergen. Denkbar wäre eine Schule, Akademie oder
+Universität (siehe hierzu: fert.php / fertigkeiten.php).
+
+VIII. Aufforderung 
+Programmiert Ereignisse für die Fertigkeiten! Sie tragen viel zum Spielspaß bei, weil sie
+endlich durchschaubar werden, und es lassen sich Dinge damit verwirklichen, die bislang
+nicht denkbar waren. Außerdem erhöht es die Langzeitmotivation, wenn man seine Werte
+steigern und sich mit anderen messen kann.
+
+Danke fürs Lesen und viel Spaß!
+
+	Oliver Wellinghoff, 28.08.2005
+	
+	******************************
+
+
+Abschließende Hinweise:
+
+Die Idee dieses Systems und die Erstumsetzung als Einzelmodul wettkampf.php
+gehen auf mich zurück. Ohne die kompetente Hilfe von Michael Jandke und Nico 
+Lachmann wäre dieses Projekt jedoch nicht das, was es heute ist. Vielen Dank
+für alles!
+
+Das Gesamtpaket fertigkeiten.zip muss folgende Dateien enthalten:
+(In Klammern die Programmierer mit dem höchsten Anteil)
+
+begegnungen.php				- Zufallsbegegnungen für den Platz (MJ)
+bellerophontes.php			- Waldereignis: Bellerophontes' Turm (Klettern / Schleichen) (OW)
+fallgrube.php				- Waldereignis: Fallgrube (Klettern) (MJ)
+fert.php					- Library für global benötigte Funktionen (OW / MJ)
+fertigkeiten.php			- Verwaltung der Fertigkeitswerte (OW / MJ)
+NOCH NICHT ENTHALTEN:		fertitemhaendler.php		- Verkauft Gegenstände mit FW-Bonus (MJ)
+fluss.php					- Waldereignis: Wetterabhängiger Fluss (Schwimmen) (OW)
+hspieler.php				- Stand: Hütchenspieler für den Platz (MJ)
+jagd.php					- Waldereignis: Jagd (Schleichen & Bogen) (MJ)
+kutsche.php					- Waldereignis: Pferde gehen mit Kutsche durch (Reiten) (OW)
+mod_rp.php					- Superuser: Freie Kommentare in den Chats (MJ)
+pdvapfelschuss.php			- Spielerinteraktion: Wer trifft den Apfel, wer den Kopf? (OW)
+pdvdiebstahl.php			- Taschendiebstahl auf dem Platz der Völker (OW)
+pdverzieherin.php			- Erziehung (Charmeplus) gegen Edelsteine (OW)
+pdvmissionar.php			- Vanthira-Missionar auf dem Platz der Völker (OW)
+pdvschmied.php				- Schmiedersatz von der Burg im Wald (MJ)
+pdvtaet.php					- Besserer Tätowierer als Petra (OW)
+pilze.php					- Waldereignis: Pilze (Kochen) (MJ)
+raceechse.php				- Rasse: Echse (OW)
+racevampir.php				- Rasse: Vampir (OW)
+racevanthira.php			- Rasse: Vanthira (OW)
+specialtythiefskillsfw.php	- Thiefskillanpassung, da jetzt von Schleichenwert abhängig (MJ)
+specialtywaffenmeister.php	- Ersetzt alten Thiefskill (MJ)
+specialtydruid.php			- Druide, abhängig vom Pflanzenkundewert (MJ)
+specialtywaldlaeufer.php	- Waldläufer, abhängig vom Bogenwert (MJ)
+statsfert.php				- Anzeige der Werte in den Vital-Infos (NL)
+wettkampf.php				- Der Platz der Völker (OW)
+
+dokumentation.txt			- Dokumentation des Fertigkeitensystems (OW)
+
+Zuerst veröffentlicht auf:	http://www.green-dragon.info
+Dortiges Forum: 			http://www.green-dragon.info/wbb2
+								--> OW = Harassim
+								--> MJ = Nathan
+								--> NL = MarkAurel
+
+Achtung: Viele Dateien modifizieren die Gesinnung, wenn das Modul alignment.php
+vorhanden ist und die neuen specialties basieren sogar darauf. Du kannst das
+Modul über diese URL herunterladen: http://dragonprime.net/users/Sichae/alignment.zip
+Sollte es sich nicht dort befinden, frag auf http://dragonprime.net nach.
