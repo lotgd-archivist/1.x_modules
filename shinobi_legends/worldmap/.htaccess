@@ -1,0 +1,4 @@
+<Files *.php>
+allow from all
+</Files>
+
