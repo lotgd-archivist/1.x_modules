@@ -17,6 +17,6 @@ I obtained this collection on 2022-05-18. Thank you very much, Nightborn!
 
 ## DragonPrime: Reborn
 
-Modules from the download provided by [DragonPrime: Reborn](https://dragonprime-reborn.ca/), who have spend a lot of time reconstructing the old dragon prime module repository.
+[Modules](./dragonprime_reborn/) from the download provided by [DragonPrime: Reborn](https://dragonprime-reborn.ca/), who have spend a lot of time reconstructing the old dragon prime module repository.
 
-**Modules](./dragonprime_reborn/) to be added.**
+See [this thread](https://dragonprime-reborn.ca/viewtopic.php?f=10&t=11&sid=380df55186a79f2ccead46ba19d1415c).  
